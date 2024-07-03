@@ -1,46 +1,59 @@
-# Getting Started with Create React App
+# The People Experience Hub Coding Exercise
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Introduction to the React Coding Exercise
 
-## Available Scripts
+Welcome to this coding exercise, where you will demonstrate your skills in building a modern front-end application using React and industry-standard libraries. The goal of this exercise is to assess your knowledge and ability to create a performant and maintainable web application that meets industry best practices.
 
-In the project directory, you can run:
+### Objective
 
-### `npm start`
+Using the template provided, your task is to develop a front-end application that allows users to interact with a set of blog posts. The application should be responsive, intuitive, and efficient. You will be evaluated on your ability to:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1. Implement core React principles: Utilize functional components, hooks, and state management effectively.
+2. Use industry-standard libraries: Integrate libraries such as React Router for navigation, Redux or Context API for state management, and Axios or Fetch API for data fetching.
+3. Ensure scalability and performance: Write clean, modular, and reusable code that can scale as the application grows. Optimize performance where necessary, considering aspects like lazy loading, memoization, and efficient rendering.
+4. Follow best practices: Adhere to best practices in code structure, styling (using CSS-in-JS, CSS modules, or similar), and testing.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Requirements
 
-### `npm test`
+1. User Interface: Create a user-friendly interface with a list and detail view of blog posts. Users should be able to:
+   - View a list of posts.
+   - Click on each post to view the blog post.
+   - Navigate between pages seamlessly.
+2. Data Handling:
+   - Create and update existing functions to Fetch data from a provided API endpoint.
+   - Handle loading states, error states, and empty states appropriately.
+3. State Management:
+   - Ensure that state updates are handled efficiently and correctly.
+4. Routing:
+   - Implement client-side routing using React Router.
+   - Ensure that navigation is smooth and that the correct data is displayed based on the URL.
+5. Performance Optimization:
+   - Use techniques such as code splitting and lazy loading to ensure the application performs well, even with a large data set.
+6. Testing:
+   - Write unit tests for your components using a testing library like Jest or React Testing Library.
+   - Ensure your application has a high test coverage and that the tests are meaningful.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Evaluation Criteria
 
-### `npm run build`
+- Functionality: The application meets all the functional requirements specified.
+- Code Quality: The code is clean, well-organized, and follows industry best practices.
+- Scalability: The application is designed to scale with an increasing amount of data and complexity.
+- Performance: The application performs well, with minimal lag or delay in rendering.
+- User Experience: The user interface is intuitive, responsive, and visually appealing.
+- Testing: The application includes meaningful tests with high coverage.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Getting Started
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1.  Clone the repo
+2.  Install Dependencies: Run npm install to install the necessary dependencies.
+3.  Start Development: Run npm start to start the development server and begin coding.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Additional Hints
 
-### `npm run eject`
+1. Spend time to review the existing architecture
+2. Begin with updating the existing mockAPI function to retrieve data
+3. Attempt to add loaders for components to access the data
+4. Write components to receive data as props
+5. Display data
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Good luck, and happy coding!
