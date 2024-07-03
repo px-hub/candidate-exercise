@@ -1,0 +1,197 @@
+@use "variables" as v;
+@use "./flexGrid/main.scss";
+
+:root {
+  // Backgrounds
+  --background-primary: white;
+  --background-secondary: #{v.$neutral-50};
+  // Headings
+  --heading-primary: #0f1728;
+  --heading-secondary: #{v.$slate-800};
+  // Paras
+  --para-primary: #334155;
+  // Borders
+  --border-primary: #e6e8ed;
+  --border-secondary: #{v.$slate-200};
+  // Inputs
+  --input-background-primary: white;
+  --input-placeholder: #{v.$slate-400};
+  --input-color: #{v.$slate-900};
+  --input-background-disabled: #{v.$neutral-100};
+  //Links
+  --link-inactive: #{v.$slate-700};
+  //Hover
+  --hover-bg-primary: #{v.$slate-50};
+  //table
+  --table-head-background: #{v.$gray-100};
+  --table-body-background: white;
+  --chart-lollipop-background: #eef2ff;
+  // buttons
+  --button-primary: #fff;
+  --button-primary-hover: rgb(249, 250, 251);
+  --button-cta-primary: #{v.$emerald-500};
+  --button-cta-primary-hover: #{v.$emerald-600};
+  --button-icon: #0f1728;
+  --button-disabled-background: #{v.$slate-100};
+  --button-disabled-color: #{v.$slate-400};
+  //icon
+  --icon-background-primary: #ddd;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p,
+li,
+span,
+small,
+button,
+input,
+tr,
+th,
+textarea,
+.text,
+div,
+label {
+  // font-family: 'Inter', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  letter-spacing: 0.5%;
+  &.bold {
+    font-weight: 600;
+  }
+  &.bolder {
+    font-weight: 700;
+  }
+  &.error {
+    color: red;
+  }
+
+  &.success {
+    color: v.$emerald-700;
+  }
+
+  &.small {
+    font-size: 14px;
+  }
+
+  i {
+    font-style: italic;
+  }
+}
+
+header {
+  min-height: 64px;
+}
+
+.page__container {
+  width: 100%;
+  padding: 0px 16px;
+}
+
+h1 {
+  font-size: 3em;
+  font-weight: 600;
+  letter-spacing: -0.3px;
+  color: var(--heading-primary);
+
+  @include v.tablet {
+    font-size: 2em;
+  }
+}
+
+h2 {
+  font-size: 2em;
+  font-weight: 400;
+  letter-spacing: 0.1px;
+  color: var(--heading-primary);
+}
+
+h3 {
+  letter-spacing: 0.1px;
+  font-size: 1.5em;
+  font-weight: 400;
+  color: var(--heading-primary);
+}
+
+h4 {
+  letter-spacing: 0.1px;
+  font-size: 1.25em;
+  color: var(--heading-primary);
+  font-weight: 400;
+}
+
+h5 {
+  letter-spacing: 0.1px;
+  font-size: 1em;
+  font-weight: 500;
+  color: var(--heading-primary);
+}
+
+h6 {
+  letter-spacing: 0.1px;
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--heading-primary);
+}
+
+span {
+  color: var(--heading-primary);
+}
+
+small {
+  color: var(--para-primary);
+}
+
+label {
+  color: var(--heading-primary);
+}
+
+li {
+  color: var(--para-primary);
+}
+
+a {
+  text-decoration: none;
+  color: var(--heading-primary);
+}
+
+p {
+  letter-spacing: 0.1px;
+  font-size: 14px;
+  line-height: 1.6em;
+  color: var(--para-primary);
+
+  a {
+    color: v.$indigo-500;
+  }
+
+  &.light {
+    font-size: 0.875em;
+    color: #919293;
+    letter-spacing: 0.13px;
+  }
+}
+
+.inner__container {
+  max-width: 1180px;
+  width: 100%;
+  padding: 8px 16px;
+  margin: 0 auto;
+}
